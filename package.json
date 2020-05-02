@@ -33,14 +33,15 @@
     "prettier": "2.0.5"
   },
   "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "gatsby:build": "gatsby build",
+    "gatsby:clean": "gatsby clean",
+    "gatsby:develop": "gatsby develop",
+    "gatsby:serve": "gatsby serve",
+    "gatsby": "npm run gatsby:clean && npm run gatsby:build && npm run gatsby:serve",
     "modules:remove": "rm -rf node_modules",
     "modules:update": "rm -rf node_modules package-lock.json && npm install",
-    "serve": "gatsby serve",
-    "start": "npm run develop",
+    "start": "npm run gatsby:develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
