@@ -48,7 +48,7 @@
     "modules:remove": "rm -rf node_modules",
     "modules:update": "rm -rf node_modules package-lock.json && npm install",
     "serve": "gatsby serve",
-    "start": "npm run develop",
+    "start": "npm run gatsby:develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "type-check": "tsc --noEmit"
   }
