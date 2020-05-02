@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
-import React, { FunctionComponent } from "react"
+import { Link } from "gatsby";
+import React, { FunctionComponent } from "react";
 
 type HeaderProps = {
-  siteTitle?: string
-}
+  siteTitle?: string;
+};
 
 const Header: FunctionComponent<HeaderProps> = ({ siteTitle = "" }) => (
   <header
@@ -32,6 +32,6 @@ const Header: FunctionComponent<HeaderProps> = ({ siteTitle = "" }) => (
       </h1>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;
