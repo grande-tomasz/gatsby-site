@@ -5,13 +5,11 @@ module.exports = {
     node: true,
   },
   extends: [
-    "airbnb",
-    "react-app",
-    "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
+    "airbnb",
     "prettier",
     "prettier/react",
     "prettier/@typescript-eslint",
@@ -30,17 +28,16 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["prettier", "react", "@typescript-eslint"],
-  rules: {
-    "import/no-unresolved": "warn",
-  },
+  rules: {},
   overrides: [
     {
       files: ["*.tsx"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
         "react/jsx-filename-extension": "off",
         "react/prop-types": "off",
-        "import/extensions": "off",
       },
     },
     {
