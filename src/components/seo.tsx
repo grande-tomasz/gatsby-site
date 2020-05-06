@@ -13,7 +13,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 type SEOProps = {
   description?: string;
   lang?: string;
-  // meta?: (object | null | undefined)[];
   meta?: Array<object | null | undefined>;
   title: string;
 };
