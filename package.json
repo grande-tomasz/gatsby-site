@@ -61,19 +61,19 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "eslint:check": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "eslint:check": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "eslint:fix": "npm run eslint:check -- --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "gatsby:build": "gatsby build",
     "gatsby:clean": "gatsby clean",
     "gatsby:develop": "gatsby develop",
     "gatsby:serve": "gatsby serve",
     "gatsby": "npm run gatsby:clean && npm run gatsby:build && npm run gatsby:serve",
-    "lint:check": "npm run ts:check && npm run eslint:check",
-    "lint:css": "stylelint './src/**/*.tsx'",
-    "lint:fix": "npm run eslint:check -- --fix",
+    "lint": "npm run eslint:check && npm run stylelint:check",
     "modules:remove": "rm -rf node_modules",
     "modules:update": "rm -rf node_modules package-lock.json && npm install",
     "start": "npm run gatsby:develop",
+    "stylelint:check": "stylelint './src/**/*.tsx'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "ts:check": "tsc"
   }
