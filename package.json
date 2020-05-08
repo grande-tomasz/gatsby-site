@@ -55,7 +55,7 @@
     "gatsby-plugin-eslint": "^2.0.8",
     "prettier": "2.0.5",
     "stylelint": "^13.3.3",
-    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^3.8.3"
@@ -64,6 +64,7 @@
     "eslint:check": "eslint --ext .js,.jsx,.ts,.tsx .",
     "eslint:fix": "npm run eslint:check -- --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "formatLintFix": "npm run format && npm run eslint:fix",
     "gatsby:build": "gatsby build",
     "gatsby:clean": "gatsby clean",
     "gatsby:develop": "gatsby develop",
