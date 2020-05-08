@@ -64,6 +64,7 @@
     "eslint:check": "eslint --ext .js,.jsx,.ts,.tsx .",
     "eslint:fix": "npm run eslint:check -- --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "formatLintFix": "npm run format && npm run eslint:fix",
     "gatsby:build": "gatsby build",
     "gatsby:clean": "gatsby clean",
     "gatsby:develop": "gatsby develop",
