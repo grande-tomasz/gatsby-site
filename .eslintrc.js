@@ -9,11 +9,8 @@ module.exports = {
     'airbnb/hooks',
     'plugin:jest/recommended',
     'plugin:jest/style',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'prettier/react',
-    'prettier/@typescript-eslint',
   ],
   globals: {
     __PATH_PREFIX__: true,
@@ -29,31 +26,57 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'prettier', 'react'],
-  rules: {
-    'react/jsx-filename-extension': [
-      'error',
-      {
-        extensions: ['.jsx', '.tsx'],
-      },
-    ],
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
-  },
   overrides: [
     {
-      files: ['*.tsx'],
+      files: ['**/*.ts', '**/*.tsx'],
+      extends: [
+        'airbnb',
+        'airbnb/hooks',
+        'plugin:jest/recommended',
+        'plugin:jest/style',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:import/typescript',
+        'prettier/react',
+        'prettier/@typescript-eslint',
+      ],
       rules: {
+        'react/jsx-filename-extension': [
+          'error',
+          {
+            extensions: ['.jsx', '.tsx'],
+          },
+        ],
+        'import/extensions': [
+          'error',
+          'ignorePackages',
+          {
+            ts: 'never',
+            tsx: 'never',
+          },
+        ],
+        'import/no-extraneous-dependencies': [
+          'error',
+          { devDependencies: ['**/*.test.ts', '**/*.test.tsx'] },
+        ],
+      },
+    },
+    {
+      files: ['**/*.tsx'],
+      rules: {
+        'react/jsx-props-no-spreading': 'warn',
         'react/prop-types': 'warn',
       },
     },
     {
-      files: ['*.test.js', '*.test.ts'],
+      files: ['**/*.js'],
+      rules: {
+        'react/jsx-props-no-spreading': 'warn',
+        'react/prop-types': 'warn',
+      },
+    },
+    {
+      files: ['**/*.test.ts', '**/*.test.tsx'],
       env: { jest: true },
     },
   ],
