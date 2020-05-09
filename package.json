@@ -34,13 +34,21 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.7.0",
+    "@testing-library/react": "^10.0.4",
+    "@types/jest": "^25.2.1",
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-helmet": "^5.0.15",
+    "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
+    "@types/testing-library__jest-dom": "^5.0.4",
+    "@types/testing-library__react": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -53,7 +61,10 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "gatsby-plugin-eslint": "^2.0.8",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
     "prettier": "2.0.5",
+    "react-test-renderer": "^16.13.1",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -75,7 +86,7 @@
     "modules:update": "rm -rf node_modules package-lock.json && npm install",
     "start": "npm run gatsby:develop",
     "stylelint:check": "stylelint './src/**/*.tsx'",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "ts:check": "tsc"
   }
 }
