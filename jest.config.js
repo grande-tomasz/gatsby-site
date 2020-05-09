@@ -13,6 +13,8 @@ module.exports = {
   testPathIgnorePatterns: ['node_modules', '\\.cache', '<rootDir>.*/public'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.([tj]sx?)$',
   testURL: 'http://localhost',
-  transform: { '^.+\\.[jt]sx?$': '<rootDir>/config/jest/jest-preprocess.js' },
+  transform: {
+    '^.+\\.[jt]sx?$': '<rootDir>/config/jest/babel-jest-transformer.js',
+  },
   transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],
 };
