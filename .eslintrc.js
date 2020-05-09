@@ -53,12 +53,6 @@ module.exports = {
       },
     },
     {
-      files: 'gatsby-config.js',
-      rules: {
-        '@typescript-eslint/camelcase': 'off',
-      },
-    },
-    {
       files: ['*.test.js', '*.test.ts'],
       env: { jest: true },
     },
