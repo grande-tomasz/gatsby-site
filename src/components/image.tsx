@@ -19,6 +19,7 @@ const Image: () => JSX.Element = () => {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
+            # https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-transformer-sharp/src/fragments.js
             ...GatsbyImageSharpFluid
           }
         }
