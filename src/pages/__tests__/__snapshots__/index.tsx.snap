@@ -164,6 +164,12 @@ Array [
       >
         Go to page 2
       </a>
+      <br />
+      <a
+        href="/blank/"
+      >
+        Go to blank page
+      </a>
     </main>
     <footer>
       © 

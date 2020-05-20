@@ -15,6 +15,8 @@ const IndexPage: () => JSX.Element = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <br />
+    <Link to="/blank/">Go to blank page</Link>
   </Layout>
 );
 
