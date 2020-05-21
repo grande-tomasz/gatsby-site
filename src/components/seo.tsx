@@ -33,7 +33,8 @@ const SEO: FunctionComponent<SEOProps> = ({
             title
             description
             author
-            link
+            url
+            image
           }
         }
       }
@@ -64,11 +65,11 @@ const SEO: FunctionComponent<SEOProps> = ({
     },
     {
       property: 'og:image',
-      content: `${site.siteMetadata.link}/thumbnail.jpg`,
+      content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
     },
     {
       property: 'og:url',
-      content: site.siteMetadata.link,
+      content: site.siteMetadata.url,
     },
   ];
 
@@ -79,7 +80,7 @@ const SEO: FunctionComponent<SEOProps> = ({
     },
     {
       name: 'twitter:site',
-      content: site.siteMetadata.link,
+      content: site.siteMetadata.url,
     },
     {
       name: 'twitter:creator',
@@ -95,14 +96,7 @@ const SEO: FunctionComponent<SEOProps> = ({
     },
     {
       name: 'twitter:image',
-      content: `${site.siteMetadata.link}/thumbnail.jpg`,
-    },
-  ];
-
-  const defaultLinkTags: HelmetProps['link'] = [
-    {
-      rel: 'canonical',
-      href: 'http://mysite.com/example',
+      content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
     },
   ];
 
@@ -122,7 +116,7 @@ const SEO: FunctionComponent<SEOProps> = ({
         ...twitterMetaTags,
         ...(meta as any),
       ]}
-      link={[...defaultLinkTags, ...(link as any)]}
+      link={link as any}
       // style
       // script
       // noscript

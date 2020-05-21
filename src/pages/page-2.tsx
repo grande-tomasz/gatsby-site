@@ -15,6 +15,12 @@ const SecondPage: () => JSX.Element = () => (
           content: 'Page two description',
         },
       ]}
+      link={[
+        {
+          rel: 'canonical',
+          href: 'http://mysite.com/page-2',
+        },
+      ]}
     />
     <h1>Hi from the page 2</h1>
     <p>Welcome to page 2</p>

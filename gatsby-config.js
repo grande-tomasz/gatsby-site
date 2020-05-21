@@ -4,8 +4,9 @@ module.exports = {
     title: 'Gatsby Default Starter',
     description:
       'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
-    link: 'http://mysite.com',
+    author: 'Gatsby',
+    url: 'http://mysite.com',
+    image: '/thumbnail.jpg',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
