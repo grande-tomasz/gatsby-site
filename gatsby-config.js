@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
+// eslint-disable-next-line import/no-extraneous-dependencies
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
