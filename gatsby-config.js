@@ -37,5 +37,11 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-eslint',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: process.env.GOOGLE_TAGMANAGER_ID,
+      },
+    },
   ],
 };
