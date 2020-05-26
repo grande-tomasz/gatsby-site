@@ -1,44 +1,39 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's default starter
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="24" />
+  </a>
+  <span>
+    Custom Gatsby Project Starter
+  </span>
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+This starter ships with the main Gatsby configuration files customized for the usage of TypeScript, TDD approach and linting experience which encourages to follow the best coding practices.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+  ### Start developing
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+  Navigate into your project’s directory and start it up.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+  ```shell
+  npm start
+  ```
 
-1.  **Start developing.**
+  Your site will run at http://localhost:8000. All applied changes will update in the browser in real time.
 
-    Navigate into your new site’s directory and start it up.
+  To create and test your GraphQL queries use GraphiQL IDE at http://localhost:8000/___graphql.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+  ### Create your production build
 
-1.  **Open the source code and start editing!**
+  Navigate into your project’s directory and execute the following command.
 
-    Your site is now running at `http://localhost:8000`!
+  ```shell
+  npm run build
+  ```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+  Your site will be served at http://localhost:9000.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+  After building your site you can deploy it to your host using files from `public` folder.
 
 ## 🧐 What's inside?
 
@@ -95,5 +90,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
