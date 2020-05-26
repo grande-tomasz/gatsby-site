@@ -82,7 +82,7 @@
     "gatsby:clean": "gatsby clean",
     "gatsby:develop": "gatsby develop",
     "gatsby:serve": "gatsby serve",
-    "gatsby": "npm run gatsby:clean && npm run gatsby:build && npm run gatsby:serve",
+    "build": "npm run gatsby:clean && npm run gatsby:build && npm run gatsby:serve",
     "modules:remove": "rm -rf node_modules",
     "modules:update": "rm -rf node_modules package-lock.json && npm install",
     "preCommit": "npm run format && npm run eslint:fix && npm test",
