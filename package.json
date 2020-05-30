@@ -79,6 +79,8 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
+    "build": "npm run gatsby:clean && npm run gatsby:build && npm run gatsby:serve",
+    "clean": "npm run gatsby:clean && rm -rf node_modules",
     "eslint:check": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
     "eslint:fix": "npm run eslint:check -- --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -86,11 +88,8 @@
     "gatsby:clean": "gatsby clean",
     "gatsby:develop": "gatsby develop",
     "gatsby:serve": "gatsby serve",
-    "build": "npm run gatsby:clean && npm run gatsby:build && npm run gatsby:serve",
-    "modules:remove": "rm -rf node_modules",
-    "modules:update": "rm -rf node_modules package-lock.json && npm install",
-    "preCommit": "npm run format && npm run eslint:fix && npm test",
-    "prePush": "npm run eslint:check && npm run stylelint:check && npm test",
+    "pre-commit": "npm run format && npm run eslint:fix && npm test",
+    "pre-push": "npm run eslint:check && npm run stylelint:check && npm test",
     "start": "npm run gatsby:develop",
     "stylelint:check": "stylelint './src/**/*.tsx'",
     "test": "jest",
@@ -98,8 +97,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run preCommit",
-      "pre-push": "npm run prePush"
+      "pre-commit": "npm run pre-commit",
+      "pre-push": "npm run pre-push"
     }
   }
 }
