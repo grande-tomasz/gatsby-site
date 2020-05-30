@@ -3,11 +3,11 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="24" />
   </a>
   <span>
-    Custom Gatsby Project Starter
+    Gatsby Custom Project Starter
   </span>
 </h1>
 
-This starter ships with the main Gatsby configuration files customized for the usage of TypeScript, TDD approach and linting experience which encourages to follow the best coding practices.
+Default Gatsby Starter customized for the usage of TypeScript, TDD approach and linting experience which encourages to follow the best coding practices.
 
 ## 🚀 Quick start
 
@@ -60,7 +60,6 @@ Below graph presents the top-level files and directories used in this starter.
         ├── /pages
         ├── /templates
     ├── /tests
-    |
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
