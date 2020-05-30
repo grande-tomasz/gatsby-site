@@ -1,19 +1,23 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-custom-project-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Default Gatsby Starter customized for the usage of TypeScript, TDD approach and linting experience which encourages to follow the best coding practices.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tomasz Grande <grande.tomasz@gmail.com>",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "jest",
+    "react",
+    "styled-components",
+    "typescript"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/grande-tomasz/gatsby-custom-project-starter"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/grande-tomasz/gatsby-custom-project-starter/issues"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
