@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, RenderResult } from '@testing-library/react';
 import LoginForm from './LoginForm';
 
 type ComponentProps = React.ComponentProps<typeof LoginForm>;
 
 describe('<LoginForm />', () => {
-  function renderLoginForm(props: Partial<ComponentProps> = {}) {
+  function renderLoginForm(props: Partial<ComponentProps> = {}): RenderResult {
     const defaultProps: ComponentProps = {
       onPasswordChange() {},
       onRememberChange() {},
