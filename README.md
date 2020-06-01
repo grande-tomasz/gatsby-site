@@ -19,7 +19,19 @@ Navigate into project’s directory and execute the following command.
 npm install
 ```
 
-All dependent npm packages will be installed in `/node_modules` directory.
+All dependent npm packages will be installed in `node_modules` directory.
+
+### Initialize new project
+
+This starter consists of some sample files which can be used as a reference.
+
+For starting brand new project navigate into project’s directory and execute the following command.
+
+```shell
+npm run project:new
+```
+
+All sample files will be removed leaving only empty directories structure in `src` folder.
 
 ### Start developing
 
