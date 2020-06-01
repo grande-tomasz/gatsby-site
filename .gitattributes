@@ -1,0 +1,19 @@
+*        text=auto eol=lf
+
+*.7z     binary
+*.eot    binary
+*.gif    binary
+*.ico    binary
+*.jpeg   binary
+*.jpg    binary
+*.mov    binary
+*.mp3    binary
+*.mp4    binary
+*.otf    binary
+*.pdf    binary
+*.png    binary
+*.tar.gz binary
+*.ttf    binary
+*.woff   binary
+*.woff2  binary
+*.zip    binary
