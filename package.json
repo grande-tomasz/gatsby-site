@@ -93,7 +93,7 @@
     "pre-push": "npm run eslint:check && npm run stylelint:check && npm test",
     "project:new": "rimraf src/components/* src/images/* src/pages/* src/templates/* tests/* && echo 'Sample files have been deleted.'",
     "start": "npm run gatsby:develop",
-    "stylelint:check": "stylelint ./src/**/*.tsx",
+    "stylelint:check": "stylelint ./src/**/*.tsx --allow-empty-input",
     "test:watch": "npm run test -- --watch",
     "test": "jest --passWithNoTests --verbose",
     "ts:check": "tsc"
