@@ -91,7 +91,7 @@
     "gatsby:serve": "gatsby serve",
     "pre-commit": "npm run format && npm run eslint:fix && npm test",
     "pre-push": "npm run eslint:check && npm run stylelint:check && npm test",
-    "project:new": "rimraf src/components/* src/images/* src/pages/* src/templates/* && echo 'Sample files have been deleted.'",
+    "project:new": "rimraf src/components/* src/images/* src/pages/* src/templates/* tests/* && echo 'Sample files have been deleted.'",
     "start": "npm run gatsby:develop",
     "stylelint:check": "stylelint ./src/**/*.tsx",
     "test": "jest",
