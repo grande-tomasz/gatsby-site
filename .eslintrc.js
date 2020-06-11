@@ -9,6 +9,8 @@ module.exports = {
     'airbnb/hooks',
     'plugin:jest/recommended',
     'plugin:jest/style',
+    'plugin:testing-library/recommended',
+    'plugin:testing-library/react',
     'plugin:import/typescript',
     'prettier/react',
   ],
