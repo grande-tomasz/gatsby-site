@@ -74,13 +74,7 @@ module.exports = {
       rules: {
         'react/jsx-props-no-spreading': 'warn',
         'react/prop-types': 'warn',
-      },
-    },
-    {
-      files: ['**/*.js'],
-      rules: {
-        'react/jsx-props-no-spreading': 'warn',
-        'react/prop-types': 'warn',
+        indent: 'off',
       },
     },
     {
