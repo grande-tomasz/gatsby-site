@@ -9,6 +9,8 @@ module.exports = {
     'airbnb/hooks',
     'plugin:jest/recommended',
     'plugin:jest/style',
+    'plugin:testing-library/recommended',
+    'plugin:testing-library/react',
     'plugin:import/typescript',
     'prettier/react',
   ],
@@ -72,13 +74,7 @@ module.exports = {
       rules: {
         'react/jsx-props-no-spreading': 'warn',
         'react/prop-types': 'warn',
-      },
-    },
-    {
-      files: ['**/*.js'],
-      rules: {
-        'react/jsx-props-no-spreading': 'warn',
-        'react/prop-types': 'warn',
+        indent: 'off',
       },
     },
     {

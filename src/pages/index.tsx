@@ -1,23 +1,38 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import * as React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import DarkModeSwitch from '../components/dark-mode-switch/dark-mode-switch';
+import {
+  darkBackgroundColor,
+  darkTextColor,
+  lightBackgroundColor,
+  lightTextColor,
+} from '../constants/colors';
 
-import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
+interface IGlobalStyleProps {
+  darkMode: boolean;
+}
 
-const IndexPage: () => JSX.Element = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <br />
-    <Link to="/blank/">Go to blank page</Link>
-  </Layout>
-);
+const GlobalStyle = createGlobalStyle<IGlobalStyleProps>`
+  body {
+    background-color: ${(props) => (props.darkMode ? darkBackgroundColor : lightBackgroundColor)};
+    color: ${(props) => (props.darkMode ? lightTextColor : darkTextColor)};
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+  }
+`;
 
-export default IndexPage;
+const HomePage: React.FunctionComponent = () => {
+  const [darkMode, setDarkMode] = React.useState(false);
+
+  return (
+    <>
+      <GlobalStyle darkMode={darkMode} />
+      <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
+      <div>Hello World</div>
+    </>
+  );
+};
+
+export default HomePage;
