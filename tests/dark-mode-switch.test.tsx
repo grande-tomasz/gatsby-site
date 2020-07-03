@@ -1,12 +1,24 @@
 import { cleanup, fireEvent, render } from '@testing-library/react';
+import * as Gatsby from 'gatsby';
 import React from 'react';
 import { darkBackgroundColor, lightTextColor } from '../src/constants/colors';
 import HomePage from '../src/pages/index';
 
 describe('Dark Mode Switch', () => {
   let darkModeSwitch: HTMLElement;
+  const siteMetadata = {
+    title: 'Gatsby Custom Project',
+    description: 'Gatsby Custom Project',
+  };
 
   beforeEach(() => {
+    const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
+    useStaticQuery.mockImplementation(() => ({
+      site: {
+        siteMetadata,
+      },
+    }));
+
     const { getByRole } = render(<HomePage />);
 
     darkModeSwitch = getByRole('switch', { name: 'dark-mode-switch' });

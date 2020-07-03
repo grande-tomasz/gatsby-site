@@ -3,11 +3,10 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: 'Gatsby',
-    url: 'http://mysite.com',
+    title: 'Gatsby Custom Project',
+    description: 'Gatsby Custom Project',
+    author: 'Tomasz Grande',
+    url: 'http://grande-tomasz.netlify.app',
     image: '/thumbnail.jpg',
   },
   plugins: [

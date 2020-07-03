@@ -7,6 +7,7 @@ import {
   lightBackgroundColor,
   lightTextColor,
 } from '../constants/colors';
+import SEO from '../components/seo';
 
 interface IGlobalStyleProps {
   darkMode: boolean;
@@ -28,6 +29,7 @@ const HomePage: React.FunctionComponent = () => {
 
   return (
     <>
+      <SEO title="Home Page" description="Personal Website Home Page" />
       <GlobalStyle darkMode={darkMode} />
       <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
       <div>Hello World</div>
