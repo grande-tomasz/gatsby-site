@@ -43,7 +43,7 @@ npm start
 
 The site will run at http://localhost:8000. All applied changes will update in the browser in real time.
 
-To create and test GraphQL queries use GraphiQL IDE at http://localhost:8000/___graphql.
+To create and test GraphQL queries use GraphiQL IDE at http://localhost:8000/\_\_\_graphql.
 
 ### Create production build
 
