@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { getButtonHeight } from '../styled/button';
+import React from 'react';
 import DarkModeSwitchButton from './dark-mode-switch-button';
 import DarkModeSwitchSvg from './dark-mode-switch-svg';
 
@@ -20,7 +19,7 @@ const DarkModeSwitch: React.FunctionComponent<IDarkModeSwitchProps> = ({
     darkMode={darkMode}
     onClick={() => setDarkMode(!darkMode)}
   >
-    <DarkModeSwitchSvg height={getButtonHeight()} />
+    <DarkModeSwitchSvg />
   </DarkModeSwitchButton>
 );
 

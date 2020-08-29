@@ -85,7 +85,7 @@
     "clean": "npm run gatsby:clean && rimraf node_modules && echo 'Node modules have been deleted.'",
     "eslint:check": "eslint --ignore-path .gitignore --ext .js,.jsx,.ts,.tsx .",
     "eslint:fix": "npm run eslint:check -- --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "gatsby:build": "gatsby build",
     "gatsby:clean": "gatsby clean",
     "gatsby:develop": "gatsby develop",

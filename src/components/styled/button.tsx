@@ -10,7 +10,7 @@ interface IButtonProps {
   size?: BUTTON_SIZE;
 }
 
-const buttonHeight = {
+export const buttonHeight = {
   [BUTTON_SIZE.small]: '42px',
   [BUTTON_SIZE.medium]: '60px',
   [BUTTON_SIZE.large]: '72px',

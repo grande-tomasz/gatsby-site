@@ -1,13 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import DarkModeSwitch from '../components/dark-mode-switch/dark-mode-switch';
+import Logo from '../components/logo/logo';
+import SEO from '../components/seo';
 import {
   darkBackgroundColor,
   darkTextColor,
   lightBackgroundColor,
   lightTextColor,
 } from '../constants/colors';
-import SEO from '../components/seo';
 
 interface IGlobalStyleProps {
   darkMode: boolean;
@@ -31,8 +32,8 @@ const HomePage: React.FunctionComponent = () => {
     <>
       <SEO title="Home Page" description="Personal Website Home Page" />
       <GlobalStyle darkMode={darkMode} />
+      <Logo darkMode={darkMode} />
       <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div>Hello World</div>
     </>
   );
 };
