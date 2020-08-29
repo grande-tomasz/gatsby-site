@@ -1,11 +1,12 @@
-import * as React from 'react';
+import React from 'react';
+import { buttonHeight } from '../styled/button';
 
 interface IDarkModeSwitchSvgProps {
-  height: string;
+  height?: string;
 }
 
 const DarkModeSwitchSvg: React.FunctionComponent<IDarkModeSwitchSvgProps> = ({
-  height,
+  height = buttonHeight.medium,
 }) => (
   <svg height={height} viewBox="0 0 780 900">
     <g>
