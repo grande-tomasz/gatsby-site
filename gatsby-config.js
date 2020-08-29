@@ -23,14 +23,21 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'gatsby-site',
+        short_name: 'gatsby-site',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png',
-        cache_busting_mode: 'none',
+        display: 'standalone',
+        icon: 'src/images/gatsby-site.png',
+        icons: [
+          {
+            src: '/images/gatsby-site.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
       },
     },
     {
