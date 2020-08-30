@@ -1,6 +1,6 @@
 import React from 'react';
-import LogoSvg from './logo-svg';
-import LogoButton from './logo-button';
+import LogoSvg from './svg/logo-svg';
+import LogoButton from './styled/logo-button';
 
 interface ILogoProps {
   darkMode: boolean;

@@ -1,6 +1,6 @@
 import React from 'react';
-import DarkModeSwitchButton from './dark-mode-switch-button';
-import DarkModeSwitchSvg from './dark-mode-switch-svg';
+import DarkModeSwitchButton from './styled/dark-mode-switch-button';
+import DarkModeSwitchSvg from './svg/dark-mode-switch-svg';
 
 interface IDarkModeSwitchProps {
   darkMode: boolean;

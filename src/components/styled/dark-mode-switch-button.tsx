@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { darkModeSwitchColor } from '../../constants/colors';
-import Button from '../styled/button';
+import Button from './button';
 
 interface IDarkModeSwitchButtonProps {
   darkMode: boolean;

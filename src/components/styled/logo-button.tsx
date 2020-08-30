@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Button from '../styled/button';
+import Button from './button';
 import { logoColor } from '../../constants/colors';
 
 interface ILogoButtonProps {
