@@ -2,6 +2,7 @@ import React from 'react';
 import DarkModeSwitch from '../components/dark-mode-switch';
 import Logo from '../components/logo';
 import SEO from '../components/seo';
+import SocialIconsList from '../components/social-icons-list';
 import GlobalStyle from '../components/styled/global-style';
 
 const HomePage: React.FunctionComponent = () => {
@@ -13,6 +14,7 @@ const HomePage: React.FunctionComponent = () => {
       <GlobalStyle darkMode={darkMode} />
       <Logo darkMode={darkMode} />
       <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
+      <SocialIconsList darkMode={darkMode} />
     </>
   );
 };
