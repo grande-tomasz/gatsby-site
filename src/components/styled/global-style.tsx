@@ -17,7 +17,26 @@ const GlobalStyle = createGlobalStyle<IGlobalStyleProps>`
     height: 100vh;
     margin: 0;
     padding: 0;
-    transition: all 0.3s;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+
+  a,
+  button {
+    svg {
+      transition-property: filter;
+      transition-duration: 0.3s;
+    }
+
+    &:focus,
+    &:hover {
+      svg {
+        filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.1))
+          drop-shadow(1px -1px 1px rgba(255, 255, 255, 0.1))
+          drop-shadow(-1px 1px 1px rgba(255, 255, 255, 0.1))
+          drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.1));
+      }
+    }
   }
 `;
 

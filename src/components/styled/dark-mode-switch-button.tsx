@@ -14,7 +14,7 @@ const DarkModeSwitchButton = styled(Button)<IDarkModeSwitchButtonProps>`
 
   svg {
     fill: ${(props) => (props.darkMode ? darkModeSwitchColor.dark : darkModeSwitchColor.light)};
-    transition-property: fill, filter;
+    transition-property: fill;
     transition-duration: 0.3s;
   }
 
@@ -30,11 +30,6 @@ const DarkModeSwitchButton = styled(Button)<IDarkModeSwitchButtonProps>`
       fill: ${(props) => (props.darkMode
           ? darkModeSwitchColor.hover.dark
           : darkModeSwitchColor.hover.light)};
-
-      filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.1))
-        drop-shadow(1px -1px 1px rgba(255, 255, 255, 0.1))
-        drop-shadow(-1px 1px 1px rgba(255, 255, 255, 0.1))
-        drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.1));
     }
   }
 `;
