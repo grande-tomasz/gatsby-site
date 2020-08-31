@@ -5,6 +5,7 @@ import GmailSvg from './svg/gmail-svg';
 import LinkedInSvg from './svg/linkedin-svg';
 import PhoneCallSvg from './svg/phone-call-svg';
 import SkypeSvg from './svg/skype-svg';
+import { buttonHeight } from './styled/button';
 
 interface ISocialIconProps {
   darkMode: boolean;
@@ -15,15 +16,15 @@ interface ISocialIconProps {
 const getSocialIconSvg = (name: string): any => {
   switch (name) {
     case 'LinkedIn':
-      return <LinkedInSvg />;
+      return <LinkedInSvg height={buttonHeight.small} />;
     case 'GitHub':
-      return <GitHubSvg />;
+      return <GitHubSvg height={buttonHeight.small} />;
     case 'Gmail':
-      return <GmailSvg />;
+      return <GmailSvg height={buttonHeight.small} />;
     case 'Skype':
-      return <SkypeSvg />;
+      return <SkypeSvg height={buttonHeight.small} />;
     case 'PhoneCall':
-      return <PhoneCallSvg />;
+      return <PhoneCallSvg height={buttonHeight.small} />;
     default:
       return null;
   }

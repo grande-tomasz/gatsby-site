@@ -11,10 +11,10 @@ const SocialIconsContainer = styled.div<ISocialIconsContainerProps>`
   right: 0;
   display: flex;
   justify-content: center;
-  gap: min(10vw, 60px);
+  gap: min(10vw, 42px);
 
   a {
-    margin: min(10vw, 60px) 0;
+    margin: min(10vw, 42px) 0;
     display: flex;
     align-items: center;
   }
