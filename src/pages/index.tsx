@@ -1,29 +1,9 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
-import DarkModeSwitch from '../components/dark-mode-switch/dark-mode-switch';
-import Logo from '../components/logo/logo';
+import DarkModeSwitch from '../components/dark-mode-switch';
+import Logo from '../components/logo';
 import SEO from '../components/seo';
-import {
-  darkBackgroundColor,
-  darkTextColor,
-  lightBackgroundColor,
-  lightTextColor,
-} from '../constants/colors';
-
-interface IGlobalStyleProps {
-  darkMode: boolean;
-}
-
-const GlobalStyle = createGlobalStyle<IGlobalStyleProps>`
-  body {
-    background-color: ${(props) => (props.darkMode ? darkBackgroundColor : lightBackgroundColor)};
-    color: ${(props) => (props.darkMode ? lightTextColor : darkTextColor)};
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    transition: all 0.3s;
-  }
-`;
+import SocialIconsList from '../components/social-icons-list';
+import GlobalStyle from '../components/styled/global-style';
 
 const HomePage: React.FunctionComponent = () => {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -34,6 +14,7 @@ const HomePage: React.FunctionComponent = () => {
       <GlobalStyle darkMode={darkMode} />
       <Logo darkMode={darkMode} />
       <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
+      <SocialIconsList darkMode={darkMode} />
     </>
   );
 };
